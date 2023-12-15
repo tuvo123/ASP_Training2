@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="lab4.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="cph" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <style>
+    .main{
+        width: 700px;
+        height:600px;
+        border:2px solid blue;
+    }
+    .top{
+        display:flex;
+        justify-content:center;
+        align-content:center;
+        align-items:center;
+        height:10%;
+        width:100%;
+        border-top:2px solid blue;
+        background-color:green;
+    }
+    .mid{
+        display:flex;
+        width:100%;
+        height:80%;
+        border-top:2px solid blue;
+        background-color:cornflowerblue;
+    }
+    .mid-left{
+        margin-top:80px;
+        width:40%;
+        
+    }
+    .mid-right{
+       
+        border-left:2px solid blue;
+    }
+    .bot{
+        display:flex;
+        justify-content:center;
+        align-content:center;
+        align-items:center;
+        border-top:2px solid blue;
+        width:100%;
+        height:10%;
+        background-color:green;
+    }
+
+</style>
+<form id="form1" runat="server">
+    <div class="main">
+        <div class="top">
+               ASP.NET
+        </div>
+        <div class="mid">
+            <div class="mid-left">
+                <div style="font-size:18px;">
+                    <asp:HyperLink ID="hplBai2" runat="server" NavigateUrl="~/lab2-bai2.aspx">Tính USCLN(a,b)</asp:HyperLink>
+                </div>
+                <div style="font-size:18px;">
+                    <asp:HyperLink ID="hplBai3" runat="server" NavigateUrl="~/lab4-bai3.aspx">Đăng ký thông tin</asp:HyperLink>
+                </div>
+            </div>
+            <div class="mid-right">
+               <div><asp:ContentPlaceHolder ID="cphmidright" runat="server">ĐÂY LÀ TRANG CHỦ</asp:ContentPlaceHolder></div>
+            </div>
+        </div>
+        <div class="bot">
+            DeSign by Võ Văn Tú (2107CQ240120)
+        </div>
+    </div>
+</form>
+</body>
+</html>
