@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pagemaster.master.cs" Inherits="lab6.Pagemaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <style>
+        .main{
+            border:2px solid blue;
+            width:700px;
+        }
+        .top{
+            border-bottom:2px solid blue;
+            display:flex;
+            justify-content:center;
+            align-content:center;
+            align-items:center;
+            font-size: 20px;
+        }
+        .mid{
+            display:flex;
+        }
+        .le{
+            
+            display:block;
+            margin:10px;
+        }
+        .
+    </style>
+    <form id="form1" runat="server">
+        <div class="main">
+            
+            <div class="top">
+                VÕ VĂN TÚ - CCN04.6B
+            </div>
+            <div class="mid">
+                <div style="border-right:2px solid blue;width:30%;">
+                    <div class="le">
+                        <asp:HyperLink ID="hpl1" runat="server" NavigateUrl="~/lab6-cap-nhat-mh.aspx">Cập nhật môn học</asp:HyperLink><br />
+                        <asp:HyperLink ID="hpl2" runat="server" NavigateUrl="~/lab6-tim-kiem-mh">Tìm kiếm môn học</asp:HyperLink>
+                    </div>
+
+                </div>
+                <div class="ri">
+                    <asp:ContentPlaceHolder ID="body" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div
+            
+        </div>
+    </form>
+</body>
+</html>
